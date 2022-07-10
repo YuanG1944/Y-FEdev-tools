@@ -1,0 +1,46 @@
+.url-info{
+  height: calc(100vh - 70px);
+  overflow: auto;
+  &-contents{
+    display: flex;
+    &-local{
+      width: 200px;
+    }
+    &-http{
+      width: 200px;
+    }
+    &-groups{
+      width: 100%;
+      position: relative;
+      &-swap-icon{
+        color:#f39c12;
+        font-size: 20px;
+        margin: 5px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: rotate(90deg);
+      }
+
+      &-button-groups{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+    }
+   
+  }
+
+  &-add-button{
+    position:absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .ant-card-body {
+    padding: 15px;
+    width: 100%;
+  }
+
+ 
+}
