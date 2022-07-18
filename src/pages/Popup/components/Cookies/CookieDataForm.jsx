@@ -72,7 +72,6 @@ const CookieDataForm = ({
 
   const onFinish = (fieldsValue) => {
     const updateValue = handleUpdateValue(fieldsValue);
-    console.log('fieldsValue-->', index, updateValue);
     updateSigleCookie(index, updateValue);
   };
 

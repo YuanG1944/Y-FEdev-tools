@@ -127,10 +127,6 @@ const CookieDrawer = ({
     closeDrawer(false);
   };
 
-  useEffect(() => {
-    console.log('drawerVisible-->', drawerVisible);
-  }, [drawerVisible]);
-
   return (
     <>
       <Drawer
