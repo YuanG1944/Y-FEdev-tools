@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Drawer, Input, Button, message } from 'antd';
 import { refresh } from 'less';
 import CookieDataForm from './CookieDataForm';
+import { useEffect } from 'react';
 
 const { TextArea } = Input;
 
@@ -126,10 +127,15 @@ const CookieDrawer = ({
     closeDrawer(false);
   };
 
+  useEffect(() => {
+    console.log('drawerVisible-->', drawerVisible);
+  }, [drawerVisible]);
+
   return (
     <>
       <Drawer
         title={drawStatus}
+        getContainer={false}
         placement="left"
         onClose={onClose}
         visible={drawerVisible}
