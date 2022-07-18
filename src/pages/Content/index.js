@@ -20,3 +20,10 @@ chrome.runtime.onMessage.addListener(function (request, info, sendResponse) {
   console.log('注入cookie成功!');
   sendResponse('success');
 });
+
+// const injectNode = document.createElement('div');
+// injectNode.id = 'injectedNode';
+// injectNode.innerText = '12312312123123';
+
+// const target_node = document.querySelector('...');
+// target_node.parentNode.insertBefore(new_node, target_node);

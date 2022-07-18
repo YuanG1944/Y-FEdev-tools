@@ -1,0 +1,47 @@
+.y-cookies{
+  height: calc(100vh - 70px);
+  &-contents{
+    height: calc(100vh - 70px);
+    overflow: auto;
+    margin-right: 5px;
+  }
+  &-checkall{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-toolbar{
+    height: calc(100vh - 102px);
+    overflow: auto;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction:column;
+    // background-color: rgb(240, 242, 245);
+    background-color: #fff;
+
+    &-tool{
+      height: 124px;
+      color:#ff9100;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        cursor: pointer;
+      }
+
+      &:active{
+        background-color: #ffe7ba;
+      }
+    }
+  }
+}
+
+.cookie-drawer{
+  &-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

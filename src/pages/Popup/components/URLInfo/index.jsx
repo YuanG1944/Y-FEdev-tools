@@ -41,7 +41,7 @@ const URLInfo = ({ showBtn }) => {
       if (store && store.hasOwnProperty('__y_fetools_urlStore')) {
         setUrlList(store['__y_fetools_urlStore']);
       }
-      console.log(res);
+      console.log(store);
     });
   }, []);
   return (

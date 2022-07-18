@@ -38,8 +38,6 @@ const URLInfoItem = ({ showBtn, index, urlList, changeUrlList }) => {
     changeUrlList(list);
   };
 
-  const handleUrl = () => {};
-
   const sentMessageToBackGround = (message) => {
     console.log('message-->', message);
     chrome.runtime.sendMessage(message, (res) => {
